@@ -78,14 +78,14 @@ const map = (array, callback) => {
         resultMapArray.push(resultValue);
     });
     return resultMapArray;
-}
+};
 
 // ここでmap関数の挙動を確認する
 const nummbersForMap = [1, 2, 3];
 const outputForMap = map(nummbersForMap, (value, index) => {
     console.log('map関数内index' + index, '値' + value);
     return value * 2;
-})
+});
 console.log('map関数input(配列):', nummbersForMap);
 console.log('map関数output:', outputForMap);
 
